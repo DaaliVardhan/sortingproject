@@ -2,23 +2,22 @@
     text-align: center;
     margin-top: 2%;
     width: 100%;
-  }
+}
   
-  .bar {
+.bar {
     display: inline-flex;
     flex-direction: row;
     width: 20px;
     height: 300px;
     margin: 1px;
     background-color: rgb(0, 136, 255);
-  }
-  .div{
+}
+.div{
     margin-top: 2%;
     display: flex;
     justify-content: space-around;
-  }
-  .probar ,.speedbar{
+}
+.probar ,.speedbar{
     display: flex;
     flex-direction: column;
-  }
-  
+}
