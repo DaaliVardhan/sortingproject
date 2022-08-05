@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting | Visualiser</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+    <div>
+      <label for="arraylength">Number of Elements</label>
+
+      <input
+        type="range"
+        value="50"
+        min="1"
+        max="500"
+        step="2"
+        oninput="add()"
+        onchange="add()"
+        id="n"
+      />
+      <label for="n" id="inputlabel"></label>
+
+      <button type="submit" class="btn" id="bsort" onclick="bsort()">
+        Bubble SORT
+      </button>
+      <button type="submit" class="btn" id="isort" onclick="isort()">
+        Insertion SORT
+      </button>
+      <button type="submit" class="btn" id="sort" onclick="ssort()">
+        Selection SORT
+      </button>
+      <button type="submit" class="btn" id="qsort" onclick="qsort()">
+        Quick SORT
+      </button>
+      <label for="">Delay</label>
+
+      <input
+        type="range"
+        min="1"
+        max="100"
+        value="50"
+        step="1"
+        id="inputspeed"
+        oninput="sp()"
+      />
+      <label for="" id="speed"></label>
+    </div>
+    <div id="body"></div>
+  </body>
+</html>
