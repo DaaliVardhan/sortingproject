@@ -15,7 +15,7 @@ function disallow() {
     });
 }
 function allow() {
-    lst = document.querySelectorAll("btn");
+    lst = document.querySelectorAll(".btn");
     lst?.forEach((element) => {
       element.disabled = false;
     });
@@ -164,14 +164,14 @@ async function isort() {
     for (i = 1; i < n; i++) {
       key = arr[i];
       j = i - 1;
-      await sleep(1);
+      await sleep(speed);
       while (j >= 0 && arr[j] > key) {
         arr[j + 1] = arr[j];
 
         j = j - 1;
         states[j + 1] = 0;
         states[j] = 0;
-        await sleep(1);
+        await sleep(speed);
         print(arr);
         states[j + 1] = 1;
         states[j] = 1;
