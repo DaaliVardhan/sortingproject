@@ -3,8 +3,9 @@ const arr = new Array();
 let speed;
   
 function sp() {
+    
     let v = document.getElementById("inputspeed").value;
-    document.getElementById("speed").innerHTML = v;
+    // document.getElementById("speed").innerHTML = v;
     return parseInt(v);
 }
   
@@ -186,10 +187,10 @@ async function ssort() {
     disallow();
     n = arr.length;
     var i, j, min_idx;
-
     for (i = 0; i < n - 1; i++) {
-      min_idx = i;
-      for (j = i + 1; j < n; j++) if (arr[j] < arr[min_idx]) min_idx = j;
+      min_idx = i;      
+      for (j = i + 1; j < n; j++) if (arr[j] < arr[min_idx]) min_idx = j;      
+      
 
       await swap(arr, min_idx, i);
       states[i] = 1;
